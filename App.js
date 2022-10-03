@@ -22,7 +22,7 @@ const App = () => {
         <AddItem />
         {
           tasks.map(item=>{
-            return <ListItem key={item.id}>{item.text}</ListItem>
+            return <ListItem key={item.id} item={item} />
           })
         }
       </ScrollView>

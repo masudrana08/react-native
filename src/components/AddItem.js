@@ -15,8 +15,7 @@ export default function AddItem() {
          onChangeText={(e)=>setText(e)}
       />
       <View style={styles.btn}>
-      <Button 
-         
+      <Button  
          title="Submit" 
          onPress={()=>{
             setTasks([...tasks, {id:tasks.length, text}]),
