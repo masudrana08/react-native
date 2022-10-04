@@ -19,9 +19,6 @@ export default function ListItem({ item }) {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>{item.text}</Text>
-      {/* <TouchableHighlight style={styles.delBtn}>
-          <Text onPress={()=>deleteTask(item.id)}>Del</Text>
-        </TouchableHighlight> */}
       <View>
         <Icon 
           name="delete-outline" 
