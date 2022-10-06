@@ -11,7 +11,6 @@ import BottomNavbar from "./src/components/Home/BottomNavbar";
 
 export const App = () => {
   const Stack = createNativeStackNavigator()
-  console.log(Stack);
   return (
     <NavigationContainer>
         <Stack.Navigator>
@@ -35,9 +34,8 @@ export const App = () => {
             component={Account}
             options={{ headerShown: false }}
           />
-          
         </Stack.Navigator>
-        <BottomNavbar />
+          <BottomNavbar />
       </NavigationContainer>
   );
 };
