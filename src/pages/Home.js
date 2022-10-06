@@ -1,14 +1,13 @@
 import React from 'react';
-import { SafeAreaView } from 'react-native';
-import BottomNavbar from '../components/Home/BottomNavbar';
-import { Layout } from '@ui-kitten/components';
+import { View, Text } from 'react-native';
 
-const Home = () => {
 
+const Home = ({navigation}) => {
+console.log(navigation, 'nav');
   return (
-   <Layout style={{flex:1}}>
-    <BottomNavbar></BottomNavbar>
-   </Layout>
+    <View>
+      <Text>Home</Text>
+    </View>
   );
 };
 

@@ -43,5 +43,8 @@
   "color-danger-600": "#B20817",
   "color-danger-700": "#95061E",
   "color-danger-800": "#780322",
-  "color-danger-900": "#630224"
+  "color-danger-900": "#630224",
+
+
+  "color-white" : "white"
 }
