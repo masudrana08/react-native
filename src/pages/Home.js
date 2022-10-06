@@ -1,12 +1,15 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { SafeAreaView } from 'react-native';
+import BottomNavbar from '../components/Home/BottomNavbar';
+import { Layout } from '@ui-kitten/components';
 
 const Home = () => {
+
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
-  )
-}
+   <Layout style={{flex:1}}>
+    <BottomNavbar></BottomNavbar>
+   </Layout>
+  );
+};
 
 export default Home

@@ -1,12 +1,12 @@
 import { Text, View } from "react-native";
 import React, { Component, useContext, useState } from "react";
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { default as theme } from './src/assets/theme.json'; 
+import * as eva from '@eva-design/eva';
+import { ApplicationProvider } from '@ui-kitten/components';
 
 import App from "./App";
 export const MyContext = React.createContext();
 export default function ContextWrapper(props) {
-   const Stack  = createNativeStackNavigator()
   const [tasks, setTasks] = useState([]);
   const value = {
     tasks,
@@ -14,7 +14,9 @@ export default function ContextWrapper(props) {
   };
   return (
     <MyContext.Provider value={value}>
+      <ApplicationProvider {...eva} theme={{ ...eva.dark, ...theme }}>
          <App />
+      </ApplicationProvider>
     </MyContext.Provider>
   );
 }
