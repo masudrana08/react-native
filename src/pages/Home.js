@@ -1,20 +1,55 @@
 import React from 'react';
-import { View, Text, SafeAreaView, ScrollView } from 'react-native';
+import { View, Text, SafeAreaView, ScrollView, Platform, Dimensions } from 'react-native';
 import { useTheme, useStyleSheet, StyleService } from '@ui-kitten/components';
 import NavigationWrapper from '../components/common/NavigationWrapper';
-
+import Video from 'react-native-video';
+import video from "../../src/assets/video.mp4"
 const Home = ({navigation}) => {
-console.log(navigation, 'nav');
+  const styles = useStyleSheet(mystyle)
   return (
-   <NavigationWrapper>
-     <ScrollView>
-      <Text>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, eligendi voluptatibus. Officiis iure cumque sapiente explicabo, officia earum error blanditiis, quod cum, quidem modi illum! Sed alias quae doloremque deserunt illo placeat modi animi reiciendis suscipit beatae rem id cupiditate vero eaque ipsum ullam, aperiam earum, perspiciatis libero, ex iste amet voluptatum! Quo nihil quibusdam eaque ipsam aperiam. Quis magni quia porro tempora totam rerum cumque, minima sunt distinctio impedit eius dolorem laudantium, hic in esse veniam aut eos ea corporis quam? Earum praesentium iusto commodi iure? Temporibus corrupti voluptatibus illo sint cum placeat repellat optio quidem quaerat consequuntur ipsum, blanditiis id expedita. Quia minima atque, nobis officia commodi illo laudantium labore id debitis reiciendis incidunt dicta nihil amet ullam modi et officiis! Delectus, consequuntur est! Quidem, aperiam suscipit? Odio sed quae optio veritatis. Labore impedit vero doloribus sit architecto quis iste ex voluptatem non maiores odit voluptatibus, omnis laborum quia ullam, voluptate necessitatibus! Repellat pariatur praesentium veniam neque unde cum tempore, placeat velit aperiam iusto aliquid. Quae velit eum aliquid, exercitationem dolorem consequatur iste ab animi tempore omnis obcaecati enim minus? Laudantium, earum fugit officiis temporibus dignissimos quidem, natus dolorem praesentium nobis doloribus architecto iure reprehenderit consequatur repudiandae fugiat, omnis quia. Cum, praesentium quidem consequuntur laboriosam soluta odit inventore minima ullam. Illo neque, repellendus consequatur incidunt inventore dolore praesentium assumenda illum vitae eum possimus, modi tenetur mollitia, recusandae officia cum. Voluptatum id rerum quam possimus ratione similique voluptate optio, ipsa illum nisi a est unde corrupti hic numquam officiis tenetur? Nihil neque architecto voluptate et voluptatibus. Consequuntur minus consectetur officia expedita odio! Laboriosam, temporibus officiis placeat, consequatur ipsam obcaecati libero assumenda aspernatur esse tenetur officia? Veritatis ad fugiat explicabo a fuga ut deleniti nihil, at quas, delectus autem, quidem quis cum odit omnis. Nihil nobis ea natus sed beatae facere quas, iusto cupiditate facilis mollitia veniam, nam harum. Eius perspiciatis quaerat, omnis fugiat vero, eligendi pariatur molestias magni, quis tenetur saepe? Eaque harum dolor ut magni nesciunt nulla odio molestiae aliquid laudantium est fugiat eius totam facere, excepturi modi recusandae. Beatae suscipit obcaecati odio praesentium doloribus ea, saepe molestias quod minima tenetur dolore dolorem quasi nostrum totam consequatur natus laboriosam voluptates, sint dolor vero sit. Deserunt, alias natus! Nesciunt eligendi laudantium quis nostrum officia reprehenderit corrupti culpa delectus quasi modi accusantium sapiente, cumque reiciendis expedita accusamus maiores ipsum, sunt consequuntur velit in asperiores! Magnam sit iste obcaecati possimus delectus. Incidunt fugit in magnam laboriosam! Expedita similique nobis provident consequuntur natus totam libero ipsam hic earum soluta, aperiam culpa illo recusandae cum enim magni voluptatibus ipsum? Deleniti quos, enim quasi iste obcaecati est ratione corporis officiis a delectus ipsa eaque ipsam? Hic neque alias aliquid quas temporibus maiores aliquam explicabo libero aspernatur nulla dolore ex sed minus itaque sunt, velit ad eveniet provident vel, illo quam atque ut aut. Error accusantium aspernatur temporibus esse quasi, velit, nihil recusandae quo nobis, sint cupiditate sunt. Eaque, deserunt id! Repellat dolorem quibusdam ipsum perferendis voluptates expedita commodi accusamus nisi perspiciatis in? Doloremque id cum ab nihil, reiciendis quod ipsa quibusdam impedit natus commodi explicabo quaerat dicta recusandae, repudiandae reprehenderit corrupti nostrum consectetur ipsum fuga voluptatum iure quis deserunt! Odit enim perspiciatis libero ipsa recusandae facere, nobis laboriosam adipisci aspernatur, animi magnam qui natus quasi temporibus totam inventore harum dolores? Asperiores vero ab incidunt alias natus doloribus blanditiis! Aperiam voluptates, inventore at animi similique, esse quasi corrupti ipsa unde nam quo, blanditiis expedita labore ab ullam! Vel ipsum porro inventore distinctio, libero alias consequuntur architecto rem suscipit fugit, commodi aliquam mollitia, quae rerum! Nostrum pariatur illo asperiores molestiae saepe, adipisci quasi est voluptate quas veritatis voluptatibus dignissimos culpa, eum ut accusamus nihil iusto fugiat labore quis! Officia labore eligendi, dolores iure nulla tempora natus omnis corrupti nam quas laboriosam. Illum voluptatem odit temporibus assumenda minus officia, ipsa molestias. Excepturi cupiditate voluptas eligendi aliquam quidem quisquam dolorum numquam at odit recusandae, nesciunt cum aliquid facilis nam beatae delectus, in fuga sequi tempore, ratione illum temporibus esse distinctio rem! Incidunt delectus a veniam commodi repellendus doloremque, id expedita cumque neque aperiam harum cupiditate deserunt modi possimus ex voluptatem quaerat pariatur? Cupiditate officiis a asperiores expedita. Corrupti quis, suscipit modi recusandae consequuntur necessitatibus quidem et accusantium veritatis deserunt doloremque, nisi quam inventore dolor fuga architecto expedita amet odit? Vitae unde perspiciatis, assumenda beatae deserunt dicta impedit veritatis amet corporis rem quo quis omnis ipsa eligendi? Nobis nisi perspiciatis eveniet quasi nostrum maiores ex, expedita modi a libero officia, inventore beatae vero ipsum sint iusto! Itaque, repellendus vitae! Explicabo facilis corporis earum voluptate sunt velit veritatis nihil doloribus tempora beatae, sapiente molestiae voluptas assumenda, enim repudiandae quos architecto minima molestias fugiat quod ab, voluptatum ea? Modi, beatae fugit? Reprehenderit autem dolorem ab aliquam ipsa, quaerat delectus nobis eos quam deleniti rerum consequuntur, fuga possimus a consequatur ratione nemo eius. Eveniet minima, dignissimos delectus harum accusamus quibusdam tenetur porro nam laboriosam natus neque magnam consequuntur numquam ipsam voluptatem, nostrum cupiditate, doloremque voluptatibus quo vero est rerum. Maiores magni vitae facere tempore nemo numquam ea unde corporis natus animi itaque, vel culpa deleniti cupiditate suscipit assumenda aut. Beatae deserunt qui, tempora ea iure consectetur natus, totam eligendi vitae quo molestias illo, excepturi porro ad similique. Commodi molestiae obcaecati perferendis necessitatibus, maxime at hic libero ex laboriosam aspernatur nam, veritatis voluptate voluptatem ipsa facilis atque possimus vel. Itaque cupiditate dolores rem, vel dicta ullam fuga, odio deserunt voluptatem quo velit iure, soluta modi accusantium doloremque. Amet molestiae ex tempore, ut ipsum ullam est quasi nesciunt illum. Sit ut incidunt voluptatibus alias autem doloribus exercitationem assumenda a dolore officiis aliquam corporis aperiam ea cupiditate quis, facere impedit sed id! Eius, sit temporibus iusto provident quod sapiente veritatis sint tempora accusantium impedit tempore dolores. Unde id autem sint ex vitae dolor, minima quam provident deserunt, amet repudiandae aliquid ullam architecto reprehenderit impedit repellat. Excepturi deserunt facilis quisquam debitis a qui ab! Dolorem modi quo quaerat suscipit nisi, debitis magni. Incidunt quam similique pariatur quaerat dolore, esse ipsam sunt, soluta facere possimus modi ut.
-      </Text>
-    </ScrollView>
-   </NavigationWrapper>
+  //  <NavigationWrapper>
+       <ScrollView style={styles.container}>
+        <Video  
+              source={video}           
+              paused={true}  
+              fullscreenAutorotate={true}
+              style={styles.backgroundVideo}  
+              repeat={true}   
+              controls={true}
+              playInBackground={true} 
+              posterResizeMode="center"   
+              resizeMode="cover"           
+          />
+        <Video  
+              source={video}           
+              paused={true}  
+              fullscreenAutorotate={true}
+              fullscreen= {true}
+              style={styles.backgroundVideo}  
+              repeat={true}   
+              controls={true}
+              playInBackground={true} 
+              posterResizeMode="center"   
+              resizeMode="cover"           
+          />
+       </ScrollView>
+  //  </NavigationWrapper>
     
   );
 };
+
+var mystyle = StyleService.create({
+  container: {
+    height: 250,
+    width: "100%"
+  },
+  backgroundVideo: {
+    height: 250,
+    width: "100%",
+    marginTop: 10,
+    backgroundColor:'red',
+    
+  }
+});
 
 export default Home

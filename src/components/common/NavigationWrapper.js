@@ -1,15 +1,17 @@
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
 import HeaderNavbar from './HeaderNavbar'
 import BottomNavbar from './BottomNavbar'
 
 const NavigationWrapper = (props) => {
   return (
-    <>
+    <View style={{flex:1}}>
       <HeaderNavbar />
-      {props.children}
+      <View style={{flex:1}}>
+        {props.children}
+      </View>
       <BottomNavbar />
-    </>
+    </View>
   )
 }
 
