@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-
+import { View, Text, SafeAreaView } from 'react-native';
+import { useTheme, useStyleSheet, StyleService } from '@ui-kitten/components';
 
 const Home = ({navigation}) => {
 console.log(navigation, 'nav');
   return (
-    <View>
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView>
+      <Text>This is hom</Text>
+    </SafeAreaView>
   );
 };
 
