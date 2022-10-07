@@ -1,11 +1,14 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import NavigationWrapper from '../components/common/NavigationWrapper'
 
 const Library = () => {
   return (
-    <View>
+    <NavigationWrapper>
+      <View>
       <Text>Library</Text>
     </View>
+    </NavigationWrapper>
   )
 }
 

@@ -7,8 +7,9 @@ import Home from "./src/pages/Home";
 import Add from "./src/pages/Add";
 import Library from "./src/pages/Library";
 import Account from "./src/pages/Account";
-import BottomNavbar from "./src/components/common/BottomNavbar";
 import HeaderNavbar from "./src/components/common/HeaderNavbar";
+import BottomNavbar from "./src/components/common/BottomNavbar";
+
 
 export const App = () => {
   const Stack = createNativeStackNavigator()
@@ -36,8 +37,7 @@ export const App = () => {
             options={{ headerShown: false }}
           />
         </Stack.Navigator>
-      <HeaderNavbar />
-      <BottomNavbar />
+
     </NavigationContainer>
   );
 };

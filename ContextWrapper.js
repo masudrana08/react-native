@@ -15,7 +15,7 @@ export default function ContextWrapper(props) {
   return (
     <MyContext.Provider value={value}>
       <ApplicationProvider {...eva} theme={{ ...eva.dark, ...theme }}>
-         <App />
+        <App />
       </ApplicationProvider>
     </MyContext.Provider>
   );

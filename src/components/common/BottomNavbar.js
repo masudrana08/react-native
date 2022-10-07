@@ -40,7 +40,7 @@ const myStyle = StyleService.create({
       backgroundColor: 'color-primary-500',
       height: 55,
       width: '100%',
-      position: 'absolute',
+      position: 'relative',
       bottom: 0,
       justifyContent: 'center'
    },

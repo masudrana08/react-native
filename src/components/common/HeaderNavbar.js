@@ -16,7 +16,7 @@ export default HeaderNavbar = ()=> {
       <View style={styles.container}>
          <View style={styles.nav}>
             <View>
-               <Text style={styles.logo}>FTube</Text>
+               <Text style={styles.logo}>oops</Text>
             </View>
             <TouchableHighlight onPress={()=>navigation.navigate("Library")}>
                <AccountIcon/>
@@ -33,7 +33,7 @@ const myStyle = StyleService.create({
       backgroundColor: 'color-primary-500',
       height: 55,
       width: '100%',
-      position: 'absolute',
+      position: 'relative',
       top: 0,
       justifyContent: 'center'
    },
